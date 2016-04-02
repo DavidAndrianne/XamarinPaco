@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <Button
+        android:text="New game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ResetBtn" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <ImageButton
+            android:src="@drawable/one_side"
+            android:id="@+id/Die1"
+            android:layout_width="110dp"
+            android:layout_height="110dp" />
+        <ImageButton
+            android:src="@drawable/one_side"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:id="@+id/Die2" />
+        <ImageButton
+            android:src="@drawable/one_side"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:id="@+id/Die3" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2">
+        <ImageButton
+            android:src="@drawable/one_side"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:id="@+id/Die4" />
+        <ImageButton
+            android:src="@drawable/one_side"
+            android:id="@+id/Die5"
+            android:layout_width="110dp"
+            android:layout_height="110dp" />
+        <ImageButton
+            android:src="@drawable/removedie"
+            android:id="@+id/RemoveDieBtn"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:onClick="LiarBtnClick" />
+    </LinearLayout>
+    <Button
+        android:text="Hide/Show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/HideToggleBtn" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/RollDiceBtn"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="@string/roll"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="30.0dp"
+            android:background="@drawable/roll_dice"
+            android:textColor="#ff8e8c69"
+            android:textSize="30dp" />
+        <ImageButton xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/CheatBtn"
+            android:layout_marginTop="30.0dp"
+            android:textColor="#ff000000"
+            android:background="@drawable/background" />
+    </LinearLayout>
+</LinearLayout>
